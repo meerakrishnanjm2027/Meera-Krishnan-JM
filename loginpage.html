@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login Page</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#fdfbfb,#ebedee);
+
+}
+
+.container{
+
+display:flex;
+align-items:center;
+gap:80px;
+
+}
+
+.phone img{
+
+width:350px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+.login{
+
+width:380px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+font-size:42px;
+
+font-weight:bold;
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#e1306c;
+
+}
+
+input{
+
+width:100%;
+
+padding:14px;
+
+margin-bottom:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:15px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+input:focus{
+
+border-color:#e1306c;
+
+box-shadow:0 0 8px rgba(225,48,108,.2);
+
+}
+
+button{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+background:linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.or{
+
+text-align:center;
+
+margin:25px 0;
+
+color:gray;
+
+position:relative;
+
+}
+
+.or::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:50%;
+
+width:40%;
+
+height:1px;
+
+background:#ddd;
+
+}
+
+.or::after{
+
+content:"";
+
+position:absolute;
+
+right:0;
+
+top:50%;
+
+width:40%;
+
+height:1px;
+
+background:#ddd;
+
+}
+
+.facebook{
+
+text-align:center;
+
+color:#1877f2;
+
+font-weight:600;
+
+margin-bottom:20px;
+
+cursor:pointer;
+
+}
+
+.forgot{
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+.forgot a{
+
+text-decoration:none;
+
+color:#444;
+
+font-size:14px;
+
+}
+
+.signup{
+
+text-align:center;
+
+}
+
+.signup a{
+
+text-decoration:none;
+
+color:#e1306c;
+
+font-weight:600;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:900px){
+
+.phone{
+
+display:none;
+
+}
+
+.login{
+
+width:350px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="phone">
+
+<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500" alt="Phone">
+
+</div>
+
+<div class="login">
+
+<div class="logo">
+RKMSHOME
+</div>
+
+<form>
+
+<input
+type="text"
+placeholder="Phone number, username, or email">
+
+<input
+type="password"
+placeholder="Password">
+
+<button>
+Log In
+</button>
+
+</form>
+
+<div class="or">
+OR
+</div>
+
+<div class="facebook">
+Continue with Facebook
+</div>
+
+<div class="forgot">
+<a href="#">
+Forgot password?
+</a>
+</div>
+
+<div class="signup">
+Don't have an account?
+<a href="#">
+Sign Up
+</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
